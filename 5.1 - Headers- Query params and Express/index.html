@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <div class="posts"></div>
+</body>
+
+<script>
+    async function getPosts(id) {
+        // fetch(`https://jsonplaceholder.typicode.com/todos/${ id }`)
+        //     .then(response => response.json())
+        //     .then(response => {
+        //         const postsDiv = document.querySelector('.posts');
+        //         const postDiv = document.createElement('div');
+        //         postDiv.innerHTML = `
+        //             <h2>${response.title}</h2>
+        //             <p>${response.completed}</p>
+        //             <p>${response.id}</p>
+        //         `;
+        //         postsDiv.appendChild(postDiv);   
+        // });
+        const response = await axios.get(`https://jsonplaceholder.typicode.com/todos/${ id }`);
+        console.log(id, ":",  response);
+        const postsDiv = document.querySelector('.posts');
+        const postDiv = document.createElement('div');
+        postDiv.innerHTML = `
+            <h2>${response.data.title}</h2>
+            <p>${response.data.completed}</p>
+            <p>${response.data.id}</p>
+        `;
+        postsDiv.appendChild(postDiv);
+    }
+    getPosts(1);
+    getPosts(2);
+    getPosts(3);
+    getPosts(4);
+</script>
+</html>
