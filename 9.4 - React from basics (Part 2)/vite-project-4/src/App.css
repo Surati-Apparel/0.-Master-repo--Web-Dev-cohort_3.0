@@ -1,0 +1,14 @@
+.cards {
+  display: flex;
+  background-color: #ccc;
+  justify-content: center;
+  margin: 0 10px;
+  border-radius: 4px;
+}
+.card-container {
+  background-color: black;
+  border-radius: 4px;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}

@@ -1,0 +1,386 @@
+* {
+  margin:0;
+  padding:0;  
+  box-sizing:border-box;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+@import url(https://raw.githack.com/Kerthin/links/main/css/pradoFontLinks.css);
+
+.containerSlider {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.swiper-slide {
+  position: relative;
+  background-color: #1f1f1f;
+  width: 520px;
+  height: 100vh;
+  border-right: 1px solid #5d5b53;
+  overflow-y: scroll;
+  cursor: grab;
+}
+.swiper-slide:last-child {
+  border-right: 0px;
+}
+.swiper-slide:active {
+  cursor: grabbing;
+}
+
+.countryTitle {
+  position: fixed;
+  bottom: 0;
+  width: 518.5px;
+  height: 60px;
+  background-color: #1f1f1f;
+  z-index: 888;
+  padding: 20px 0;
+}
+.countryTitle__name {
+  text-align: center;
+  font-family: 'Alliance';
+  font-size: 16px;
+  font-weight: 100;
+  color: #cfc8b7;
+}
+
+.painter {
+  width: 100%;
+  height: 100%;
+  padding: 110px 25px;
+  overflow: hidden;
+}
+.painter__info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.painter__textWrap {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 470px);
+}
+.painter__text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.painter__imgWrap {
+  width: 100%;
+  height: 470px;
+}
+.painter__img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.painter__imgBg {
+  background: url('https://parlaebasta.files.wordpress.com/2016/11/vergine-delle-rocce.jpg?w=500') center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  transform: scale(1.2);
+}
+.painter__imgBg:hover {
+  transform: scale(1);
+}
+.painter__name,
+.painter__years {
+  text-align: center;
+  font-family: sans-serif;
+  color: #cfc8b7;
+}
+.painter__name {
+  font-size: 28px;
+  font-weight: 100;
+}
+.painter__years {
+  margin-top: 15px;
+  font-family: Arno;
+  font-size: 20px;
+  color: #666566;
+}
+
+/* Italy */
+._bg_titian {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/titian_temptationChrist_picture.jpg');
+}
+._bg_vinci {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/vinci_mona_picture.jpg');
+}
+
+/* France */
+._bg_vanLoo {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/vanLoo_cardinal_picture.jpg');
+}
+._bg_delacroix {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/delacroix_crusaders_picture.jpg');
+}
+
+/* Spain */
+._bg_murillo {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/murillo_magdalene_picture.jpg');
+}
+._bg_greco {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/greco_riz_picture.jpg');
+}
+
+/* Belgium */
+._bg_eyck {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/eyck_madonnaCanon_picture.jpg');
+}
+._bg_dyck {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/dyck_francois_picture.jpg');
+}
+
+/* Germany */
+._bg_mengs {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/mengs_charles.jpg');
+}
+._bg_winterhalter {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/winterhalter_royalFamily_picture.jpg');
+}
+
+/* Russia */
+._bg_brullov {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/brullov_pompeii_picture.jpg');
+}
+._bg_vasnetsov {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/vasnetsov_crossroads.jpg');
+}
+
+/* Netherlands */
+._bg_bruegel {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/bruegel_babel_picture.jpg');
+}
+._bg_rubens {
+  background-image: url('https://rawcdn.githack.com/Kerthin/pradoMuseum-templateSait/cd8728fde1d1bc684f93b8ef915a61bea90ac4f7/src/img/bg_fullHD/rubens_peaceAndWar_picture.jpg');
+}
+
+/*  */
+@media screen and (orientation: landscape) and (max-height: 780px) {
+  .painter {
+    padding: 90px 25px;
+  }
+  .painter__textWrap{
+    height: calc(100% - 370px);
+  }
+  .painter__imgWrap {
+    height: 370px;
+  }
+}
+@media screen and (orientation: landscape) and (max-height: 630px) {
+  .painter {
+    padding: 70px 35px;
+  }
+  .painter__textWrap{
+    height: calc(100% - 320px);
+  }
+  .painter__imgWrap {
+    height: 320px;
+  }
+}
+@media screen and (orientation: landscape) and (max-height: 540px) {
+  .painter {
+    padding: 50px 40px;
+  }
+  .painter__textWrap{
+    height: calc(100% - 270px);
+  }
+  .painter__imgWrap {
+    height: 270px;
+  }
+}
+@media screen and (orientation: landscape) and (max-height: 460px) {
+  .painter {
+    padding: 40px 60px;
+  }
+  .painter__textWrap{
+    height: calc(100% - 220px);
+  }
+  .painter__imgWrap {
+    height: 220px;
+  }
+}
+
+
+@media screen and (max-width: 1600px) {
+  .swiper-slide {
+    width: 470px;
+  }
+  .countryTitle {
+    width: 468.5px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .painter {
+    padding: 90px 15px;
+  }
+  .painter__textWrap{
+    height: calc(100% - 440px);
+  }
+  .painter__imgWrap {
+    height: 440px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .swiper-slide {
+    width: 400px;
+  }
+  .countryTitle {
+    width: 398.5px;
+  }
+  .painter {
+    padding: 70px 15px;
+  }
+  .painter__textWrap{
+    height: calc(100% - 370px);
+  }
+  .painter__imgWrap {
+    height: 370px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .painter {
+    padding: 100px 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-slide {
+    width: 300px;
+  }
+  .countryTitle {
+    width: 298.5px;
+  }
+  .painter {
+    padding: 90px 15px;
+  }
+  .painter__textWrap{
+    height: calc(100% - 270px);
+  }
+  .painter__imgWrap {
+    height: 270px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    width: 400px;
+  }
+  .countryTitle {
+    width: 398.5px;
+  }
+  .painter {
+    padding: 140px 15px;
+  }
+  .painter__textWrap{
+    height: calc(100% - 370px);
+  }
+  .painter__imgWrap {
+    height: 370px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .containerSlider {
+    width: 100%;
+  }
+  .painter {
+    padding: 70px 15px;
+  }
+  .swiper-slide {
+    width: 350px;
+  }
+  .countryTitle {
+    width: 348.5px;
+  }
+  .painter__textWrap{
+    height: calc(100% - 320px);
+  }
+  .painter__imgWrap {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .swiper-slide {
+    width: 300px;
+  }
+  .countryTitle {
+    width: 298.5px;
+  }
+  .painter__textWrap{
+    height: calc(100% - 270px);
+  }
+  .painter__imgWrap {
+    height: 270px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .swiper-slide {
+    width: 270px;
+  }
+  .countryTitle {
+    width: 268.5px;
+  }
+  .painter__textWrap{
+    height: calc(100% - 240px);
+  }
+  .painter__imgWrap {
+    height: 240px;
+  }
+}
+
+/* CodePen Window size in Dev.to post */
+@media screen and (max-width: 680px) and (max-height: 520px) {
+  .painter {
+    padding: 50px 35px;
+  }
+  .painter__textWrap{
+    height: calc(100% - 290px);
+  }
+  .painter__imgWrap {
+    height: 290px;
+  }
+  
+  .swiper-slide {
+    width: 360px;
+  }
+  .countryTitle {
+    width: 358.5px;
+  }
+  
+  .painter__name {
+    font-size: 25px;
+  }
+  .painter__years {
+    font-size: 18px;
+  }
+}
