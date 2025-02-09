@@ -1,9 +1,6 @@
 //import x from 'y'
 import { BrowserRouter, Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom';
 
-
-
-
 function App() {
 
   return (
